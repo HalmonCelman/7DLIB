@@ -1,0 +1,7 @@
+->universal driver for 4 digit 7 segment LED display
+	|-> config file   (d)
+	|-> fragment onoff (d)
+	    |->multiplexing (d)
+	|-> 1 digit generation (d)
+	|-> 4 digits generation (d)
+
