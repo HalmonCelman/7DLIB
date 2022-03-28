@@ -1,3 +1,6 @@
+/*
+by KK ©
+ */
 #ifndef DLED_H_INCLUDED
 #define DLED_H_INCLUDED
 

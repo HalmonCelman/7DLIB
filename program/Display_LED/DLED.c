@@ -1,3 +1,6 @@
+/*
+by KK ©
+ */
 #include "DLED.h"
 #include <util/delay.h>
 ///*********************************************************high level functions*************************

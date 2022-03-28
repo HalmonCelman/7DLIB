@@ -1,3 +1,6 @@
+/*
+by KK ©
+ */
 #ifndef DLED_CONFIG_H_INCLUDED
 #define DLED_CONFIG_H_INCLUDED
 //configure pins-> see F5463BH.pdf in dokumentacje/
