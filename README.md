@@ -33,4 +33,12 @@ How to use example?
     	 See if it's working.
 '''
     
+    test
+    ```
+$ cd ../lorem
+$ npm install
+$ npm start
+```
+    
+    
 Have fun with this library ;)
