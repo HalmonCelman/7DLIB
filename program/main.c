@@ -19,8 +19,12 @@ int main(void)
     // Initialize
     dled_init();
 
-    ///!important element-> without this Display will not work good
-//interval around 200 times per second
+    ///!important element-> without this Display will not work
+
+    //example for Attiny2313
+
+#if DLED_SYS == 0  //AVR
+ //interval around 200 times per second
     TCCR0A=0;
     TCCR0A|=(1<<WGM01); //CTC mode
     TCCR0B=0;
@@ -28,7 +32,13 @@ int main(void)
     OCR0A=234; //to have around 200 times per second
     TIMSK|=(1<<OCIE0A); //enable compare match interrupt
     sei(); //enable global interrupts
-    ///!!!!!
+
+#endif // DLED_SYS
+
+
+
+
+     ///!!!!!
 
     //to see description of each function see dled.h
 
@@ -68,15 +78,24 @@ int main(void)
 
     dled_setn(-257); //-257
 
-    while(1)
+
+
+    while(1)  //do nothing
     ;
 
     return 0;
 }
 
 
-///!important element-> without this Display will not work good
+///!important element-> without this Display will not work
+
+//example for attiny2313
+
+#if DLED_SYS == 0  //AVR
 ISR(TIMER0_COMPA_vect){
 dled_int(); //refresh display
 }
+#endif // DLED_SYS
+
+
 ///!

@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny2313-20SU U1
+U 1 1 620EA465
+P 3800 4250
+F 0 "U1" H 3800 5531 50  0000 C CNN
+F 1 "ATtiny2313-20SU" H 3800 5440 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 3800 4250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 620EB523
+P 6700 1200
+F 0 "#PWR02" H 6700 1050 50  0001 C CNN
+F 1 "VCC" H 6715 1373 50  0000 C CNN
+F 2 "" H 6700 1200 50  0001 C CNN
+F 3 "" H 6700 1200 50  0001 C CNN
+	1    6700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 620EBF5C
+P 6450 1400
+F 0 "#PWR01" H 6450 1150 50  0001 C CNN
+F 1 "GND" H 6455 1227 50  0000 C CNN
+F 2 "" H 6450 1400 50  0001 C CNN
+F 3 "" H 6450 1400 50  0001 C CNN
+	1    6450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female J1
+U 1 1 620EFB84
+P 7250 1500
+F 0 "J1" H 7278 1476 50  0000 L CNN
+F 1 "USBASP" H 7278 1385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 7250 1500 50  0001 C CNN
+F 3 "~" H 7250 1500 50  0001 C CNN
+	1    7250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1200 6700 1300
+Wire Wire Line
+	4400 3950 5950 3950
+Wire Wire Line
+	5950 1700 6600 1700
+Wire Wire Line
+	6600 1700 6600 1500
+Wire Wire Line
+	6600 1500 7050 1500
+Wire Wire Line
+	4400 4050 6100 4050
+Wire Wire Line
+	6100 1800 6750 1800
+Wire Wire Line
+	6750 1800 6750 1600
+Wire Wire Line
+	6750 1600 7050 1600
+Wire Wire Line
+	4400 4150 6200 4150
+Wire Wire Line
+	6200 1900 6850 1900
+Wire Wire Line
+	6850 1900 6850 1700
+Wire Wire Line
+	6850 1700 7050 1700
+Wire Wire Line
+	3200 3450 3050 3450
+Wire Wire Line
+	3050 3450 3050 2400
+Wire Wire Line
+	3050 2400 6600 2400
+Wire Wire Line
+	6600 2400 6600 2000
+Wire Wire Line
+	6600 2000 7050 2000
+Wire Wire Line
+	7050 2000 7050 1800
+Wire Wire Line
+	6700 1300 7050 1300
+Wire Wire Line
+	6450 1400 7050 1400
+$Comp
+L Device:Crystal Y1
+U 1 1 620F7FFB
+P 2500 3750
+F 0 "Y1" V 2454 3881 50  0000 L CNN
+F 1 "Crystal 12Mhz" V 2545 3881 50  0000 L CNN
+F 2 "Crystal:Crystal_HC52-6mm_Vertical" H 2500 3750 50  0001 C CNN
+F 3 "~" H 2500 3750 50  0001 C CNN
+	1    2500 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3600 3200 3600
+Wire Wire Line
+	3200 3600 3200 3650
+Wire Wire Line
+	2500 3900 3200 3900
+Wire Wire Line
+	3200 3900 3200 3850
+Wire Wire Line
+	4400 4350 4700 4350
+Wire Wire Line
+	4400 4450 4700 4450
+Wire Wire Line
+	4400 4550 4700 4550
+Wire Wire Line
+	4400 4650 4700 4650
+Wire Wire Line
+	4400 4750 4700 4750
+Wire Wire Line
+	4400 4850 4700 4850
+Wire Wire Line
+	4400 4950 4700 4950
+Wire Wire Line
+	6850 4550 6950 4550
+Wire Wire Line
+	6950 4550 6950 3450
+Wire Wire Line
+	6950 3450 4400 3450
+Wire Wire Line
+	6850 4650 7050 4650
+Wire Wire Line
+	7050 4650 7050 3550
+Wire Wire Line
+	7050 3550 4400 3550
+Wire Wire Line
+	6850 4750 7150 4750
+Wire Wire Line
+	7150 4750 7150 3650
+Wire Wire Line
+	7150 3650 4400 3650
+Wire Wire Line
+	6850 4850 7250 4850
+Wire Wire Line
+	7250 4850 7250 3750
+Wire Wire Line
+	7250 3750 4400 3750
+$Comp
+L power:VCC #PWR0101
+U 1 1 62124C52
+P 3800 2750
+F 0 "#PWR0101" H 3800 2600 50  0001 C CNN
+F 1 "VCC" H 3815 2923 50  0000 C CNN
+F 2 "" H 3800 2750 50  0001 C CNN
+F 3 "" H 3800 2750 50  0001 C CNN
+	1    3800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 62125177
+P 3800 5700
+F 0 "#PWR0102" H 3800 5450 50  0001 C CNN
+F 1 "GND" H 3805 5527 50  0000 C CNN
+F 2 "" H 3800 5700 50  0001 C CNN
+F 3 "" H 3800 5700 50  0001 C CNN
+	1    3800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3150 3800 2750
+Wire Wire Line
+	3800 5350 3800 5700
+Wire Wire Line
+	6100 1800 6100 4050
+Wire Wire Line
+	5950 1700 5950 3950
+Wire Wire Line
+	6200 1900 6200 4150
+$Comp
+L 7SEG:F5463BH-Display_Character U?
+U 1 1 625499E3
+P 5800 4700
+F 0 "U?" H 5775 5275 50  0000 C CIN
+F 1 "F5463BH-Display_Character" H 5775 5184 50  0000 C CNN
+F 2 "Display_7Segment:F5463BH" H 5850 5250 50  0001 C CNN
+F 3 "" H 5900 5550 50  0001 C CNN
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

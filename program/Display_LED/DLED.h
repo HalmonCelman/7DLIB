@@ -15,7 +15,7 @@ so we must 'trick' preprocessor and do:
 #define another_sth(x) sth(something,x)
 */
 
-#define PREP_TRICK_DDR(x,y) x??=#y   //yeeea so much fun using trigraph XD -> don't worry ??= mean # basically
+#define PREP_TRICK_DDR(x,y) x??=#y   //so much fun using trigraph XD
 #define DDR(x) PREP_TRICK_DDR(DDR,x)
 
 #define PREP_TRICK_PORT(x,y) x##y
@@ -65,7 +65,7 @@ dled_set() -> set or clear fragment of display
 1st param - which digit you want to edit
 2nd param - which fragment(enum)
 0 - A
-1- B
+1 - B
 2 - C
 3 - D
 4 - E
@@ -78,7 +78,7 @@ void dled_set(uint8_t,uint8_t,uint8_t);
 
 /*
 dled_setd() -> set digit
-1st param - wchich digit
+1st param - which digit
 2nd param - what value
 0b x x x x x x x x
      ^ ^ ^ ^ ^ ^ ^

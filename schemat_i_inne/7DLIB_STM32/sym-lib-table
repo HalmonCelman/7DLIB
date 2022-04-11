@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name STM32)(type Legacy)(uri ${KIPRJMOD}/lib/MCU_ST_STM32H7.lib)(options "")(descr ""))
+  (lib (name 7SEG)(type Legacy)(uri ${KIPRJMOD}/lib/7SEGDISP.lib)(options "")(descr ""))
+)

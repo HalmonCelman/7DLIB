@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name 7SEG)(type Legacy)(uri ${KIPRJMOD}/lib/7SEGDISP.lib)(options "")(descr ""))
+)

@@ -197,7 +197,7 @@ if(d_4_7_s_d>3)
 #endif
 
 #if DLED_SYS==1
-This version isn t yet supported
+//This version isn t yet supported
 #endif
 ///**********************************************************end
 
