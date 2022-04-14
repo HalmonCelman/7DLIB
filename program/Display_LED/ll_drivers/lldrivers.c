@@ -1,3 +1,6 @@
+/*
+by KK
+*/
 #include "../DLED.h"
 
 #if DLED_SYS==0

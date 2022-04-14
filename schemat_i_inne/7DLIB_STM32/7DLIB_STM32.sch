@@ -151,23 +151,10 @@ F 3 "" H 2650 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 1550 2650 1300
-Wire Wire Line
 	2650 6600 2650 6500
 Connection ~ 2650 6500
 Wire Wire Line
 	2650 6500 2700 6500
-$Comp
-L power:+3.3V #PWR?
-U 1 1 625A0545
-P 2650 1300
-F 0 "#PWR?" H 2650 1150 50  0001 C CNN
-F 1 "+3.3V" H 2665 1473 50  0000 C CNN
-F 2 "" H 2650 1300 50  0001 C CNN
-F 3 "" H 2650 1300 50  0001 C CNN
-	1    2650 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 4350 4800 4350
 Wire Wire Line
@@ -209,4 +196,89 @@ F 3 "" H 6000 5550 50  0001 C CNN
 	1    5900 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 62589F50
+P 950 3950
+F 0 "C?" H 1065 3996 50  0000 L CNN
+F 1 "100N" H 1065 3905 50  0000 L CNN
+F 2 "" H 988 3800 50  0001 C CNN
+F 3 "~" H 950 3950 50  0001 C CNN
+	1    950  3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1550 950  1550
+Wire Wire Line
+	950  1550 950  3800
+Connection ~ 1950 1550
+Wire Wire Line
+	950  4100 950  6500
+Wire Wire Line
+	950  6500 2300 6500
+Connection ~ 2300 6500
+$Comp
+L power:GND #PWR?
+U 1 1 625911F3
+P 3900 6250
+F 0 "#PWR?" H 3900 6000 50  0001 C CNN
+F 1 "GND" H 3905 6077 50  0000 C CNN
+F 2 "" H 3900 6250 50  0001 C CNN
+F 3 "" H 3900 6250 50  0001 C CNN
+	1    3900 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6050 3900 6050
+Wire Wire Line
+	3900 6050 3900 6250
+$Comp
+L STM32:STlinkv2 U?
+U 1 1 62598DBE
+P 6150 2050
+F 0 "U?" H 6378 2101 50  0000 L CNN
+F 1 "STlinkv2" H 6378 2010 50  0000 L CNN
+F 2 "" H 6150 2050 50  0001 C CNN
+F 3 "" H 6150 2050 50  0001 C CNN
+	1    6150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1900 5000 1900
+Wire Wire Line
+	5000 1900 5000 1550
+Wire Wire Line
+	5000 1550 3350 1550
+Connection ~ 3350 1550
+$Comp
+L power:GND #PWR?
+U 1 1 6259D8D6
+P 5000 2000
+F 0 "#PWR?" H 5000 1750 50  0001 C CNN
+F 1 "GND" H 5005 1827 50  0000 C CNN
+F 2 "" H 5000 2000 50  0001 C CNN
+F 3 "" H 5000 2000 50  0001 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2000 5850 2000
+Wire Wire Line
+	5850 2200 5250 2200
+Wire Wire Line
+	5250 2200 5250 4150
+Wire Wire Line
+	5250 4150 3600 4150
+Wire Wire Line
+	5850 2300 4650 2300
+Wire Wire Line
+	4650 2300 4650 5950
+Wire Wire Line
+	4650 5950 3600 5950
+Wire Wire Line
+	5850 2100 5350 2100
+Wire Wire Line
+	5350 2100 5350 4050
+Wire Wire Line
+	5350 4050 3600 4050
 $EndSCHEMATC

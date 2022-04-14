@@ -1,7 +1,7 @@
 /*
 example code for 4 digit 7 fragment universal library
 
-by KK ©
+by KK
  */
 ///###standard libraries###
 #include <avr/io.h>
