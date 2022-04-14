@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATtiny:ATtiny2313-20SU U1
-U 1 1 620EA465
-P 3800 4250
-F 0 "U1" H 3800 5531 50  0000 C CNN
-F 1 "ATtiny2313-20SU" H 3800 5440 50  0000 C CNN
-F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 3800 4250 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 3800 4250 50  0001 C CNN
-	1    3800 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR02
 U 1 1 620EB523
 P 6700 1200
@@ -197,6 +186,17 @@ F 1 "F5463BH-Display_Character" H 5775 5184 50  0000 C CNN
 F 2 "Display_7Segment:F5463BH" H 5850 5250 50  0001 C CNN
 F 3 "" H 5900 5550 50  0001 C CNN
 	1    5800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AT:Attiny2313_fix U?
+U 1 1 62589A88
+P 3800 4250
+F 0 "U?" H 3800 5531 50  0000 C CNN
+F 1 "Attiny2313_fix" H 3800 5440 50  0000 C CNN
+F 2 "" H 4050 3750 50  0001 C CNN
+F 3 "" H 4050 3750 50  0001 C CNN
+	1    3800 4250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

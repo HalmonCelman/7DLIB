@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name 7SEG)(type Legacy)(uri ${KIPRJMOD}/lib/7SEGDISP.lib)(options "")(descr ""))
+  (lib (name AT)(type Legacy)(uri "/home/halmon/Pulpit/KK/_MIKROKONTROLERY/ukończone/__ze_schematem(kompletne)/7DLIB/schemat_i_inne/7DLIB_AVR/lib/Attiny_fix.lib")(options "")(descr ""))
 )
