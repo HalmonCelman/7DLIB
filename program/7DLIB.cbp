@@ -38,6 +38,9 @@
 		</Unit>
 		<Unit filename="Display_LED/DLED.h" />
 		<Unit filename="Display_LED/DLED_config.h" />
+		<Unit filename="Display_LED/ll_drivers/lldrivers.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

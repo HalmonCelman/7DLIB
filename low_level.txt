@@ -1,0 +1,65 @@
+If you use platform that isn't in README you must write by yourself low level drivers
+two functions: dled_init(), dled_int()
+
+how to write dled_init() ?
+
+1. always at start on the functions write:
+	
+	number_7dlib=0;
+    	for(int i=0;i<4;i++){
+    	buffer_7dlib[i]=0;
+    	}
+    	
+    what this do?
+    number_7dlib is a counter thats point which digit is now displayed, so we starts from first digit
+    buffer_7dlib[] is a buffer for digits - which char we are displaying, so we are clearing display
+
+2. next step is to initialize ports:
+	all ports: from A to G and from DIG1 to DIG4 must be as an output
+	pins DIG1, DIG2, DIG3, DIG4 must br in low logical state
+	pins D_A, D_B, ... D_G must be in high logical state
+
+it's all!
+
+how to write dled_int() ?
+
+1. at first step you must see which digit will be now displayed and set to high logical state this pin and set to low state pin before.
+For example if number_7dlib=0 then DIG1 must be set to high logical state, and DIG4 to low state
+if number_7dlib=1 then DIG2 high, and DIG1 low etc.
+
+2. second step is to set the fragments that should be set
+format of data in display buffer( buffer_7dlib[] ):
+0b 0 x x x x x x x
+     ^ ^ ^ ^ ^ ^ ^
+     | | | | | | |
+     G F E D C B A
+     
+if x=1 then this fragment should be set( low logic state )
+if x=0 then this fragment should be cleared( high logic state )
+
+For example:
+if( buffer_7dlib[number_7dlib] & 0b00000001 ){ //if A is set
+low state on PIN A
+}else{
+high level on pin A
+}
+
+if( buffer_7dlib[number_7dlib] & 0b00000010 ){ //if B is set
+low state on PIN B
+}else{
+high level on pin B
+}
+
+etc.
+
+
+3. last step is to incerese digit which we are displaying
+( of course it can't be higher than 3 cause we have only 4 digits)
+
+number_7dlib++;
+if(number_7dlib>3) //if higher than 3
+    number_7dlib=0; //return to the first
+
+
+
+it's all, now you should do what's in README

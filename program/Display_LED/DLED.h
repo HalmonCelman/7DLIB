@@ -57,7 +57,7 @@ D_D4
 
 
 
-/*dled_init()-> initialize led display, and clear screen*/
+/*dled_init()-> initialize led display, and clear screen, implementation in lldrivers.c*/
 void dled_init(void);
 
 /*
@@ -109,7 +109,7 @@ void dled_cleard(uint8_t);
 
 /*
 dled_int()
-low level - refreshing screen - see README to information about how to use
+low level - refreshing screen - see README to information about how to use, implementation in lldrivers.c
 */
 void dled_int(void);
 
@@ -117,8 +117,8 @@ void dled_int(void);
 
 
 
-uint8_t d_4_7_s_d;
-char d_4_7_s[4];
+uint8_t number_7dlib;
+char buffer_7dlib[4];
 
 
 
