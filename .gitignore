@@ -25,9 +25,11 @@ fp-info-cache
 *.xml
 *.csv
 
-# CodeBlocks files
-program/bin/
-program/obj/
+# CodeBlocks files and STM32CubeIDE files
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
 *.layout
 *.depend
 

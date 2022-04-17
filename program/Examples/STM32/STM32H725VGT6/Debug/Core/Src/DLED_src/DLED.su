@@ -1,5 +1,0 @@
-../Core/Src/DLED_src/DLED.c:12:6:dled_set	16	static
-../Core/Src/DLED_src/DLED.c:20:6:dled_setd	16	static
-../Core/Src/DLED_src/DLED.c:24:6:dled_clear	16	static
-../Core/Src/DLED_src/DLED.c:29:6:dled_cleard	16	static
-../Core/Src/DLED_src/DLED.c:33:6:dled_setn	32	static
