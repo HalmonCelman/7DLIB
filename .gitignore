@@ -32,4 +32,4 @@ program/obj/
 *.depend
 
 # Others
-program/wgraj.run
+*.run
